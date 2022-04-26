@@ -7,7 +7,7 @@ import os
 from move_base_msgs.msg import MoveBaseAction, MoveBaseGoal
 from geometry_msgs.msg import * 
 from tf.msg import * 
-from test_if import pub_state_led
+from test_interface import pub_state_led
 
 arr = ["x_final (x17)","x1" , "x2" , "x3" , "x4",
        "x5" , "x6" , "x7" , "x8",
