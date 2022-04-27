@@ -120,6 +120,7 @@ if __name__ == '__main__':
                         os.system("python Send_goal.py")
                         # pass
                     elif user_try == 'n' or user_try == 'N':
+                        os.system('rostopic pub /sl std_msgs/Int32 "data: 1"')
                         break
                 except NameError : 
                     break
