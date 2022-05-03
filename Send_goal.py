@@ -66,6 +66,8 @@ if __name__ == '__main__':
         print(f"\t\t\t|{arr[3]} | {arr[6]} | {arr[9]} | {arr[12]} |\t")
         print(f"\t\t\t\t -- {arr[13]}--")
 
+        print(f"OUTSIDE (3 POINT) ->  Q , W , E \n")
+
         ''' 
 
         xn is position in matrix. 
@@ -103,6 +105,11 @@ if __name__ == '__main__':
 
 
         elif user == '13' : x,y,z,w = 14.796737670898438 , 5.377570629119873 , 3.1276440620422363 , 1.0
+
+        elif user == 'q' : x,y,z,w = 0 , 0 , 0 , 1.0 
+        elif user == 'w' : x,y,z,w = 0 , 0 , 0 , 1.0 
+        elif user == 'e' : x,y,z,w = 0 , 0 , 0 , 1.0 
+        
 
         # tune 
         # https://answers.ros.org/question/210914/robot-unable-to-rotate-in-place-for-dwa_local_planner/
