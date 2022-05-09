@@ -74,6 +74,8 @@ if __name__ == '__main__':
         x_final is stop position.
         x_start is start position.
 
+        Cancel navigation enter -> 99 
+
         '''
 
         print("\t\t***********************************\n")
@@ -109,6 +111,8 @@ if __name__ == '__main__':
         elif user == '14' : x,y,z,w = 18.169801712036133 , 63.34782028198242 , 1.621294379234314 , 1.0 
         elif user == '15' : x,y,z,w = 18.595335006713867 , 34.86942672729492 , 1.5839771032333374 , 1.0 
         elif user == '16' : x,y,z,w = 20.388240814208984 , 1.6881142854690552 , -1.5700036287307741 , 1.0 
+
+        elif user == '99' : os.system("rostopic pub /move_base/cancel actionlib_msgs/GoalID -- {}")
 
 
         # tune 
