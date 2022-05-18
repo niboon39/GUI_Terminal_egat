@@ -113,11 +113,12 @@ if __name__ == '__main__':
 
         elif user == '99' : os.system("rostopic pub /move_base/cancel actionlib_msgs/GoalID -- {}")
 
-
+        arr_user = ['0' , '1' , '2' , '3' , '4' , '5' , '6' , '7' , '8' , '9' , '10' , '11' , '12',
+                    '13' , '14' , '15' , '16' , '99']
         # tune 
         # https://answers.ros.org/question/210914/robot-unable-to-rotate-in-place-for-dwa_local_planner/
         
-        if user.isdigit():
+        if user.isdigit() and user in arr_user:
             pub_state_led.led_state(n = 0 )
             result = movebase_client(user , x, y , z , w )
             ''' Test function ''' 
