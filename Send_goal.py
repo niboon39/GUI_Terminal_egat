@@ -1,5 +1,4 @@
 #!/usr/bin/env python3
-from curses.ascii import isdigit
 import rospy
 import actionlib
 import os
@@ -27,7 +26,7 @@ def movebase_client(n , x , y , z , w = 1.0 ):
 
     goal.target_pose.header.frame_id = "map"
     #goal.target_pose.header.stamp = rospy.Time.now()
-    arr[int(n)-1] = "O"
+    # arr[int(n)-1] = "O"
 
     goal.target_pose.pose.position.x = x 
     goal.target_pose.pose.position.y = y 
